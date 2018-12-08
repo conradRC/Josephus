@@ -2,16 +2,18 @@
  *  Compilation:  javac Josephus.java
  *  Execution:    java Josephus m n
  *  Dependencies: Queue.java
+ *                StDraw.java
  *
  *  % java Josephus 2 7
  *  2 4 6 1 5 3 7
  ******************************************************************************/
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Font;
+import java.lang.reflect.*;
+
 public  class Josephus{
   static double corx[];
   static double cory[];
-  public static void calcularCoordenadas(int p){ 
+  public  void calcularCoordenadas(int p){   
     StdDraw.setCanvasSize(650, 650);
     Font font = new Font("Eras Light ITC", Font.BOLD, 14);
     StdDraw.setFont(font);
